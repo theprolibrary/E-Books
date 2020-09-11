@@ -1,0 +1,14 @@
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:theprolibrary.com
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} (www\.)?theprolibrary.com
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:theprolibrary.com
+
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW IPALLOWID:QaJyRyLane
+allow from 141.136.33.29
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE QaJyRyLane:IPALLOWID
+

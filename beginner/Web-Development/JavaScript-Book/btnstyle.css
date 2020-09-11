@@ -1,0 +1,890 @@
+.nav img{
+  border-radius: 20px 0px 0px 20px;
+  height:9vh;
+ min-height: auto;
+  width:170px;
+  float: left;
+  margin-top: 0;   
+}
+ body{
+  background-color: navajowhite;
+ }
+
+*{
+  padding:0;
+  margin:0;
+  user-select: none;
+}
+
+.nav{
+  margin-left: 4%;
+  margin-top: 1%;
+  width: 90%;
+  height: 9vh;
+ min-height:auto;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px black;
+  background-color: black;
+  line-height: 1.4;
+}
+
+.nav .brand{
+  color: white;
+  font-size: 27px;
+  letter-spacing: .5px;
+}
+
+.dropbtn{
+  cursor: pointer;
+  color: white;
+  font-size: 27px;
+  padding: 0 0 0 18px;
+  transition: all .1s ease-in-out;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover .dropbtn{
+  color: red;
+
+}
+.nav .brand:hover{
+  color: red;
+}
+.dropdown-content{
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  background-color: black;
+  min-width: 220px;
+  z-index: 1;
+  padding-top: 25px;
+  transition: .6s;
+  font-size: 18px;
+}
+
+.dropdown-content a{
+  background: black;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px 0px black;
+  display: block;
+}
+
+.dropdown-content #last-item{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; 
+}
+
+.dropdown-content a:hover{
+  color:red;
+}
+
+.dropdown:hover .dropdown-content{
+  pointer-events: visible;
+  opacity: 1;
+}
+
+
+ 
+ .nav .left{
+  float: left;
+  padding:1%;
+ margin-left: 5%;
+ }
+
+
+ #amazon{
+  height:45vh;
+  width: 40vh;
+  border-radius: 5%;
+  position: relative;
+  background-color: gold;
+  cursor: pointer;
+}
+.container2 {
+  text-align: center;
+  padding: 10px 20px;
+}
+#amazon:hover{
+  transition: all .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.mid-left{
+  display: inline-block;
+  color:black;
+  font-size: 20px;
+  margin-top: 4%;
+  position: relative;
+   margin-left:4%;
+}
+#content{
+margin-left:4%;
+}
+
+.button a{
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 80px 0;
+  color: blue;
+  font-size: 28px;
+  text-decoration: none;
+  margin-left: 35%;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 2px;
+}
+.button a:nth-child(1){
+  filter: hue-rotate(290deg);
+}
+.button a:nth-child(3){
+  filter: hue-rotate(110deg);
+}
+
+.button a:hover{
+  background:red;
+  color:black;
+  box-shadow: 2px 6px 6px 2px blue;
+ }
+
+.button a span{
+  position: absolute;
+  display: block;
+
+}
+
+.button a span:nth-child(1){
+  top:0;left: -100%;
+  width:100%;
+  height:2px;
+  background: linear-gradient(90deg,transparent,red);
+  animation:animate1 1s linear infinite;
+}
+@keyframes animate1{
+  0%{left:-100%;  }
+  50%,100%{left:100%;}
+}
+.button a span:nth-child(2){
+  top: -100%;right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,red);
+  animation: animate2 1s linear infinite;
+  animation-delay: .25s;
+}
+@keyframes animate2{
+  0%{top:-100%;}
+  50%,100%{top:100%;}
+}
+.button a span:nth-child(3){
+  bottom: 0;right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,red);
+  animation: animate3 1s linear infinite;
+  animation-delay: .5s;
+}
+@keyframes animate3{
+  0%{right:-100%; }
+  50%,100%{right:100%;}
+}
+
+.button a span:nth-child(4){
+  bottom:-100%;left:0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,red);
+  animation: animate4 1s linear infinite;
+  animation-delay: .75s;
+}
+@keyframes animate4{
+  0%{bottom:-100%;  }
+  50%,100%{bottom:100%;}
+}
+
+
+@media only screen and (max-width:1440px)
+{
+ 
+ #amazon{
+  height:57vh;
+  width: 47vh;
+  border-radius: 5%;
+  position: relative;
+  background-color: gold;
+  cursor: pointer;
+  margin-left: -27%;
+}
+.mid-left{
+  display: inline-block;
+  color:black;
+  font-size: 19px;
+  margin-top: 4%;
+  position: relative;
+}
+#content{
+margin-left:5%;
+}
+
+.button a{
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 80px 0;
+  color: blue;
+  font-size: 28px;
+  text-decoration: none;
+  margin-left: 35%;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 2px;
+}
+}
+
+
+
+@media only screen and (max-width:1024px) and (min-height: 1360px)
+{
+ .nav img{
+  border-radius: 20px 0px 0px 20px;
+  height:6.2vh;
+ min-height: auto;
+  width:195px;
+  float: left;
+  margin-top: 0;   
+}
+.nav{
+  margin-left: 4%;
+  margin-top: 1%;
+  width: 90%;
+  height: 6.2vh;
+ min-height:auto;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px black;
+  background-color: black;
+  line-height: 1.5;
+}
+
+.nav .brand{
+  color: white;
+  font-size: 40px;
+  letter-spacing: .5px;
+}
+
+.dropbtn{
+  cursor: pointer;
+  color: white;
+  font-size: 40px;
+  padding: 0 0 0 18px;
+  transition: all .1s ease-in-out;
+}
+ .nav .left{
+  float: left;
+  padding:1%;
+ margin-left: 5%;
+ }
+.dropdown-content{
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  background-color: black;
+  min-width: 300px;
+  z-index: 2;
+  padding-top: 10px;
+  transition: .6s;
+  font-size: 28px;
+}
+
+  #amazon{
+  height:38vh;
+  width: 32vh;
+  border-radius: 5%;
+  position: relative;
+  background-color: gold;
+  cursor: pointer;
+  margin-left: 25%;
+}
+.mid-left{
+  display: inline-block;
+  color:black;
+  font-size: 23px;
+  margin-top: 5vh;
+}
+
+#content{
+margin-left:9vh;
+letter-spacing: 1px;
+}
+.button a{
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 80px 0;
+  color: blue;
+  font-size: 28px;
+  text-decoration: none;
+  margin-left: 33%;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 2px;
+}
+}
+
+@media only screen and (max-width:1024px) and (max-height: 600px)
+{
+ .nav img{
+  border-radius: 20px 0px 0px 20px;
+  height:10vh;
+ min-height: auto;
+  width:195px;
+  float: left;
+  margin-top: 0;   
+}
+.nav{
+  margin-left: 4%;
+  margin-top: 1%;
+  width: 90%;
+  height: 10vh;
+ min-height:auto;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px black;
+  background-color: black;
+  line-height: 1.5;
+}
+
+.nav .brand{
+  color: white;
+  font-size: 33px;
+  letter-spacing: .5px;
+}
+
+.dropbtn{
+  cursor: pointer;
+  color: white;
+  font-size: 33px;
+  padding: 0 0 0 18px;
+  transition: all .1s ease-in-out;
+}
+.dropdown-content{
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  background-color: black;
+  min-width: 220px;
+  z-index: 2;
+  padding-top: 10px;
+  transition: .6s;
+  font-size: 18px;
+}
+
+  #amazon{
+  height:60vh;
+  width: 50vh;
+  border-radius: 5%;
+  position: relative;
+  background-color: gold;
+  cursor: pointer;
+  margin-top: 5%;
+  margin-left: -32vh;
+}
+.mid-left{
+  display: inline-block;
+  color:black;
+  font-size: 20px;
+  margin-top: 5vh;
+}
+
+#content{
+margin-left:25vh;
+letter-spacing: .5px;
+}
+.button a{
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 80px 0;
+  color: blue;
+  font-size: 28px;
+  text-decoration: none;
+  margin-left: 36%;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 2px;
+}
+}
+
+
+@media only screen and (max-width:768px) and (min-height: 1024px){
+
+  .nav img{
+  border-radius: 20px 0px 0px 20px;
+  height:6.5vh;
+  min-height: auto;
+  width:150px;
+  float: left;
+  margin-top: 0;   
+}
+.nav{
+  margin-left: 4%;
+  margin-top: 1.5%;
+  width: 90%;
+  height: 6.5vh;
+  min-height:auto;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px black;
+  background-color: black;
+  line-height: 1.7;
+}
+
+.nav .brand{
+  color: white;
+  font-size: 28px;
+  letter-spacing: .5px;
+}
+
+.dropbtn{
+  cursor: pointer;
+  color: white;
+  font-size: 29px;
+  padding: 0 0 0 18px;
+  transition: all .1s ease-in-out;
+}
+.dropdown-content{
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  background-color: black;
+  min-width: 200px;
+  z-index: 2;
+  padding-top: 10px;
+  transition: .6s;
+  font-size: 16px;
+}
+
+  #amazon{
+  height:40vh;
+  width: 32vh;
+  border-radius: 5%;
+  position: relative;
+  background-color: gold;
+  cursor: pointer;
+  margin-left: 24%;
+}
+.mid-left{
+  display: inline-block;
+  color:black;
+  font-size: 18px;
+}
+#content{
+  margin-top: 4%;
+  margin-left: 10vh;
+}
+.button a{
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 80px 0;
+  color: blue;
+  font-size: 22px;
+  text-decoration: none;
+  margin-left: 24%;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 2px;
+  margin-top: 5%;
+}
+}
+@media only screen and (max-width:768px) and (max-height: 600px){
+
+  .nav img{
+  border-radius: 20px 0px 0px 20px;
+  height:7vh;
+  min-height: auto;
+  width:140px;
+  float: left;
+  margin-top: 0;   
+}
+.nav{
+  margin-left: 4%;
+  margin-top: 1.5%;
+  width: 90%;
+  height: 7vh;
+  min-height:auto;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px black;
+  background-color: black;
+  line-height: 1.5;
+}
+
+.nav .brand{
+  color: white;
+  font-size: 24px;
+  letter-spacing: .5px;
+}
+
+.dropbtn{
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding: 0 0 0 18px;
+  transition: all .1s ease-in-out;
+}
+.dropdown-content{
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  background-color: black;
+  min-width: 190px;
+  z-index: 2;
+  padding-top: 8px;
+  transition: .6s;
+  font-size: 16px;
+}
+  #amazon{
+  height:50vh;
+  width: 40vh;
+  border-radius: 5%;
+  position: relative;
+  background-color: gold;
+  cursor: pointer;
+}
+.mid-left{
+  display: inline-block;
+  color:black;
+  font-size: 17px;
+}
+#content{
+  margin-top: 4%;
+  margin-left: 15vh;
+}
+.button a{
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 80px 0;
+  color: blue;
+  font-size: 22px;
+  text-decoration: none;
+  margin-left: 30%;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 2px;
+  margin-top: 5%;
+}
+}
+
+@media only screen and (max-width:600px){
+.nav img{
+  border-radius: 20px 0px 0px 20px;
+  height:6vh;
+  width:130px;
+  float: left;
+  margin-top: 0;   
+}
+.nav{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5%;
+  width: auto;
+  height: 6vh;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px black;
+  background-color: black;
+  line-height: 1.5;
+}
+.nav .brand{
+  color: white;
+  font-size: 25px;
+  letter-spacing: .5px;
+}
+
+.dropbtn{
+  cursor: pointer;
+  color: white;
+  font-size: 26px;
+  padding: 0 0 0 18px;
+  transition: all .1s ease-in-out;
+}
+.dropdown-content{
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  background-color: black;
+  min-width: 180px;
+  z-index: 2;
+  padding-top: 10px;
+  transition: .6s;
+  font-size: 15px;
+}
+  #amazon{
+  height:38vh;
+  width: 30vh;
+  border-radius: 5%;
+  position: relative;
+  background-color: gold;
+  cursor: pointer;
+  margin-left: 23%;
+  margin-top: 5%;
+}
+.mid-left{
+  display: inline-block;
+  color:black;
+  font-size: 16px;
+}
+#content{
+  margin-top: 7%;
+  margin-left: 13vh;
+}
+.button a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  margin: 80px 0;
+  color: blue;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 27%;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 2px;
+  margin-top: 5%;
+}
+}
+@media only screen and (max-width:430px){
+.nav img{
+  border-radius: 20px 0px 0px 20px;
+  height:6vh;
+  width:90px;
+  float: left;
+  margin-top: 0;   
+}
+.nav{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5%;
+  width: auto;
+  height: 6vh;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px black;
+  background-color: black;
+  line-height: 1.5;
+}
+.nav .brand{
+  color: white;
+  font-size: 23px;
+  letter-spacing: .5px;
+}
+
+.dropbtn{
+  cursor: pointer;
+  color: white;
+  font-size: 23px;
+  padding: 0 0 0 18px;
+  transition: all .1s ease-in-out;
+}
+.dropdown-content{
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  background-color: black;
+  min-width: 180px;
+  z-index: 2;
+  padding-top: 10px;
+  transition: .6s;
+  font-size: 15px;
+}
+  #amazon{
+  height:38vh;
+  width: 30vh;
+  border-radius: 5%;
+  position: relative;
+  background-color: gold;
+  cursor: pointer;
+  margin-left: 23%;
+  margin-top: 5%;
+}
+.mid-left{
+  display: inline-block;
+  color:black;
+  font-size: 16px;
+}
+#content{
+  margin-top: 7%;
+  margin-left: 8vh;
+}
+.button a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  margin: 80px 0;
+  color: blue;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 23%;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 2px;
+  margin-top: 5%;
+}
+}
+
+@media only screen and (max-width:375px){
+.nav img{
+  border-radius: 20px 0px 0px 20px;
+  height:5.5vh;
+  width:85px;
+  float: left;
+  margin-top: 0;   
+}
+.nav{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5%;
+  width: auto;
+  height: 5.5vh;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px black;
+  background-color: black;
+  line-height: 1.5;
+}
+.nav .brand{
+  color: white;
+  font-size: 19px;
+  letter-spacing: .5px;
+}
+
+.dropbtn{
+  cursor: pointer;
+  color: white;
+  font-size: 19px;
+  padding: 0 0 0 18px;
+  transition: all .1s ease-in-out;
+}
+.dropdown-content{
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  background-color: black;
+  min-width: 180px;
+  z-index: 2;
+  padding-top: 10px;
+  transition: .6s;
+  font-size: 14px;
+}
+
+  #amazon{
+  height:38vh;
+  width: 30vh;
+  border-radius: 5%;
+  position: relative;
+  background-color: gold;
+  cursor: pointer;
+  margin-left: 22%;
+}
+.mid-left{
+  display: inline-block;
+  color:black;
+  font-size: 16px;
+}
+#content{
+  margin-top: 7%;
+  margin-left: 8vh;
+}
+.button a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  margin: 80px 0;
+  color: blue;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 23%;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 2px;
+  margin-top: 7%;
+}
+}
+@media only screen and (max-width:330px){
+ .nav img{
+  border-radius: 20px 0px 0px 20px;
+  height:5vh;
+  width:85px;
+  float: left;
+  margin-top: 0;   
+}
+.nav{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5%;
+  width: auto;
+  height: 5vh;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px black;
+  background-color: black;
+  line-height: 1.5;
+}
+.nav .brand{
+  color: white;
+  font-size: 19px;
+  letter-spacing: .5px;
+}
+
+.dropbtn{
+  cursor: pointer;
+  color: white;
+  font-size: 19px;
+  padding: 0 0 0 18px;
+  transition: all .1s ease-in-out;
+}
+.dropdown-content{
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  background-color: black;
+  min-width: 170px;
+  z-index: 2;
+  padding-top: 10px;
+  transition: .6s;
+  font-size: 13px;
+}
+
+  #amazon{
+  height:38vh;
+  width: 32vh;
+  border-radius: 5%;
+  position: relative;
+  background-color: gold;
+  cursor: pointer;
+  margin-left: 20%;
+}
+.mid-left{
+  display: inline-block;
+  color:black;
+  font-size: 16px;
+}
+#content{
+  margin-top: 7%;
+  margin-left: 7vh;
+}
+.button a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  margin: 80px 0;
+  color: blue;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 22%;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 2px;
+  margin-top: 7%;
+}
+}
